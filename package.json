@@ -1,0 +1,7 @@
+{
+  "name": "socket.io-bug",
+  "main": "client.js",
+  "dependencies": {
+    "socket.io-client": "^2.3.0"
+  }
+}
