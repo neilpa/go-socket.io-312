@@ -30,7 +30,7 @@ func main() {
 		log.Println("recv'd foo, sending bar:", msg)
 		s.Emit("bar", msg)
 	})
-	server.OnError("", func(e error) {
+	server.OnError("", func(s socketio.Conn, e error) {
 		log.Printf("error: %s\n", e)
 	})
 	server.OnDisconnect("", func(s socketio.Conn, reason string) {
